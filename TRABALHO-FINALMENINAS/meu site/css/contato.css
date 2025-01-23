@@ -1,0 +1,162 @@
+/* Estilo para o corpo da página */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #483D8B; /* Cor de fundo suave */
+    color: white;
+    margin: 0;
+    padding-bottom: 50px; /* Espaço para o footer fixo */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #483D8B;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+header nav ul li a:hover {
+    color: #483D8B;
+}
+
+/* Seção de Formulário de Contato */
+#contato {
+    background-color: #483D8B;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#contato h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#contato p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    background-color: #483D8B;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #423980;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #483D8B;
+}
+
+/* Seção de Redes Sociais */
+#social {
+    background-color: #483D8B;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#social h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#social ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#social ul li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+#social a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#social a:hover {
+    color: #282252;
+}
+
+/* Rodapé */
+footer {
+    background-color: #483D8B;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}

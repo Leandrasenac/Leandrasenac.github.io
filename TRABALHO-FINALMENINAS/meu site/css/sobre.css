@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Estilos gerais */
+body {
+    font-family: 'Poppins';
+    background-color: #483D8B; /* Cor suave para o fundo */
+    margin: 0;
+    padding: 0;
+    color: white; /* Cor do texto no corpo para contraste */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #483D8B; /* Mantendo a mesma cor de fundo */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 4.5rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    display:inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration:none;
+    font-weight:20px;
+}
+
+header nav ul li a:hover {
+    color: #ffffff; /* Cor de destaque para os links */
+}
+
+/* Seção sobre mim */
+#sobre-mim {
+    padding: 60px 0;
+    text-align: center;
+}
+
+#sobre-mim h2 {
+    font-size: 2rem;
+    color: #ffffff; /* Cor do título */
+    margin-bottom: 30px;
+}
+
+#sobre-mim .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#sobre-mim .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#sobre-mim .col-md-4 {
+    flex: 1;
+    text-align: center;
+}
+
+#foto {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 5px solid #270835; /* Borda cor de rosa */
+}
+
+#sobre-mim .col-md-8 {
+    flex: 2;
+    padding: 0 20px;
+    text-align: left;
+}
+
+#sobre-mim .col-md-8 p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ffffff; /* Cor do texto */
+}
+
+/* Seção de redes sociais */
+#social-links {
+    margin-top: 30px;
+}
+
+#social-links a {
+    margin: 0 15px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+#social-links a:hover {
+    color:#483D8B; /* Cor de destaque no hover */
+}
+
+/* Rodapé */
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsividade - Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+    #sobre-mim .container {
+        width: 90%; /* Aumenta a largura da seção em telas pequenas */
+    }
+
+    #foto {
+        width: 150px;
+        height: 150px;
+    }
+
+    #sobre-mim h2 {
+        font-size: 1.8rem;
+    }
+
+    #sobre-mim .col-md-8 p {
+        font-size: 1rem;
+    }
+
+    #social-links a {
+        font-size: 1.1rem;
+        margin: 0 10px;
+    }
+
+    header nav ul li {
+        margin: 10px 0; /* Espaçamento maior entre os itens do menu em telas pequenas */
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "name": "Leandra da Silva Ramm",
+    "slogan": "Codificando ideias, criando um futuro!",
+    "profileImage": "img/00f13716-525a-4a3a-9452-fa258cfdc1bf.jpg",
+    "description": "Sou uma desenvolvedora em formação, apaixonada por tecnologia e inovação.",
+    "socialLinks": {
+        "instagram": "https://www.instagram.com/leandrasilva",
+        "linkedin": "https://www.linkedin.com/in/leandrasilvaramm",
+        "github": "https://github.com/leandra"
+    },
+    "skills": [
+        "Programação",
+        "Desenvolvimento Web",
+        "JavaScript",
+        "HTML5",
+        "CSS3"
+    ],
+    "education": [
+        {
+            "title": "EMEF Edmundo Strassburger",
+            "date": "2019 - Ensino Fundamental"
+        },
+        {
+            "title": "EMEF CEI - Centro de Educação Integrada",
+            "date": "2023 - Ensino Fundamental"
+        },
+        {
+            "title": "Cursando 2º ano do Ensino Médio",
+            "date": "Em andamento"
+        }
+    ],
+    "experience": [
+        {
+            "title": "Startup Teens - Universidade Feevale",
+            "date": "2023"
+        },
+        {
+            "title": "MENINAS NA TI - Programa SENAC Gratuidade",
+            "date": "Em andamento"
+        }
+    ],
+    "contactInstructions": "Entre em contato pelo e-mail ou telefone.",
+    "credits": "© 2025 Todos os direitos reservados."
+}
+
+
+
