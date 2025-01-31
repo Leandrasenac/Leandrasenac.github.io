@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -41,20 +41,18 @@ header nav ul {
 
 header nav ul li {
     display: inline;
-    margin: 0 1.5rem; /* Espaçamento entre os itens de navegação */
+    margin: 0 1.5rem; 
 }
 
 header nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.2rem; /* Tamanho dos links */
-    font-weight: 500; /* Peso intermediário para os links */
+    font-size: 1.2rem; 
+    font-weight: 500; 
     transition: color 0.3s ease;
 }
 
-header nav ul li a:hover {
-    color: #45266e; /* Efeito de hover dourado */
-}
+
 
 /* Seção de Habilidades */
 #habilidades {
@@ -62,6 +60,7 @@ header nav ul li a:hover {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
+    animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both
 }
 
 #habilidades h2 {
@@ -87,59 +86,57 @@ header nav ul li a:hover {
 
 /* Rodapé */
 footer {
-    background-color: #222;
+    background-color: #483D8B;
     color: white;
     text-align: center;
-    padding: 1.5rem; /* Rodapé espaçoso */
-    position: fixed;
-    width: 100%;
+    padding: 20px 0;
+    position: relative;
     bottom: 0;
-    font-size: 1rem;
+    width: 100%;
 }
-
 /* Estilos para os itens de habilidades */
 .habilidade-item {
     background-color: #fff;
-    padding: 2rem; /* Mais espaço nos itens */
-    border-radius: 15px; /* Bordas arredondadas */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombras suaves e grandes */
+    padding: 2rem; 
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
     transition: transform 0.3s ease-in-out;
     text-align: center;
     border: 1px solid #ddd;
 }
 
 .habilidade-item:hover {
-    transform: translateY(-15px); /* Efeito de hover acentuado */
+    transform: translateY(-15px); 
 }
 
 .habilidade-item img {
-    width: 60px; /* Ícones maiores */
+    width: 60px; 
     height: 60px;
     margin-bottom: 15px;
 }
 
 .habilidade-item h3 {
     font-size: 1.4rem;
-    color: #483D8B; /* Cor mais escura para o título das habilidades */
+    color: #483D8B; 
     margin-bottom: 10px;
-    font-weight: 600; /* Peso intermediário para o nome das habilidades */
+    font-weight: 600; 
 }
 
 .habilidade-item p {
     font-size: 1.1rem;
-    color: #333; /* Cor escura para o texto das habilidades */
+    color: #333; 
 }
 
 /* Estilo para texto adicional */
 section p {
-    font-size: 1.15rem;  /* Tamanho de fonte um pouco maior */
-    color: #f4f4f4;  /* Cor suave para texto adicional */
+    font-size: 1.15rem;  
+    color: #f4f4f4;  
     max-width: 800px;
     margin: 0 auto;
-    line-height: 1.8;  /* Melhor espaçamento entre linhas */
+    line-height: 1.8; 
 }
 
-
+@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
 
 
 

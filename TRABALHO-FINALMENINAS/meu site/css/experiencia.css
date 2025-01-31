@@ -3,92 +3,91 @@
 
 /* Estilo para o corpo da página */
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #483D8B; /* Cor de fundo roxa */
-    margin: 0;
-    padding: 0;
-    color: white; /* Cor do texto em branco para contraste com o fundo escuro */
+    font-family: 'Poppins', sans-serif; 
+    background-color:#483D8B;  
+    color: #f4f4f4;  
+    line-height: 1.6;  
+    padding-bottom: 50px;  
 }
 
 /* Cabeçalho */
 header {
-    background-color: #483D8B; /* Fundo do cabeçalho igual ao fundo da página */
-    color: #483D8B;
-    padding: 30px 0;
+    background-color: #483D8B;  
+    color: white;
+    padding: 1.5rem; 
     text-align: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+
 header h1 {
-    margin: 0;
-    font-size: 2.8rem;
-    font-weight: 700;
+    font-size: 2.5rem;  
+    margin-bottom: 0.5rem;
+    font-weight: 700; 
 }
 
 header p {
     font-size: 1.2rem;
-    margin: 10px 0;
     font-weight: 300;
 }
 
-/* Menu de navegação */
 header nav ul {
     list-style-type: none;
     padding: 0;
-    margin-top: 15px;
+    margin-top: 1rem;
 }
 
+
 header nav ul li {
-    display: inline-block;
-    margin: 0 20px;
+    display: inline;
+    margin: 0 1.5rem; 
 }
 
 header nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: 500;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    transition: color 0.3s;
+    font-size: 1.2rem; 
+    font-weight: 500; 
+    transition: color 0.3s ease;
 }
 
-header nav ul li a:hover {
-    color: #f4f7fc; /* Cor mais suave no hover */
-}
+
+
 
 /* Seções */
 section {
     padding: 60px 0;
     text-align: center;
-    background-color: #483D8B; /* Fundo da seção igual ao da página */
+    background-color: #483D8B; 
 }
 
 /* Contêiner principal */
 .container {
     width: 80%;
     margin: 0 auto;
+    animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both
 }
 
 /* Seção de Experiência */
 #experiencia {
-    background-color: #483D8B; /* Um tom mais claro de roxo para destacar */
+    background-color: #483D8B; 
     padding: 40px;
     margin: 20px 0;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    list-style: none;
 }
 
 #experiencia h2 {
     font-size: 2.2rem;
-    color: #f4f7fc; /* Cor clara para o título */
+    color: #f4f7fc; 
     margin-bottom: 20px;
     font-weight: 600;
 }
 
 /* Estilo para cada item de experiência */
 .experiencia-item {
-    background-color: #483D8B; /* Cor mais clara de fundo para contraste */
-    border: 1px solid #483D8B; /* Borda escura para destacar o item */
+    background-color: #483D8B; 
+    border: 1px solid #483D8B; 
     padding: 30px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -103,14 +102,15 @@ section {
 
 .experiencia-item h4 {
     font-size: 1.6rem;
-    color: white; /* Título do item de experiência em branco */
+    color: white; 
     margin-bottom: 10px;
     font-weight: 500;
+    list-style: none;
 }
 
 .experiencia-item p {
     font-size: 1.2rem;
-    color: #f4f7fc; /* Texto claro dentro dos itens de experiência */
+    color: #f4f7fc;
     line-height: 1.6;
 }
 
@@ -123,13 +123,11 @@ footer {
     background-color: #483D8B;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
     position: relative;
     bottom: 0;
     width: 100%;
-    font-size: 14px;
 }
-
 /* Responsividade - Mobile First */
 @media (max-width: 768px) {
     header nav ul {
@@ -165,3 +163,4 @@ footer {
     }
 }
 
+@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}

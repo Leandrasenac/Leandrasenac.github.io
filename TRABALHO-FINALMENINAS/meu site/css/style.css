@@ -3,13 +3,14 @@
 
 /* Estilo para o corpo da página */
 body {
-    font-family: 'Poppins', sans-serif; /* Fonte bonita Poppins */
-    background-color:#483D8B; /* Cor de fundo suave */
+    font-family: 'Poppins', sans-serif; 
+    background-color:#483D8B; 
     margin: 0;
-    padding-bottom: 50px; /* Espaço para o footer fixo */
-    color: white; /* Cor padrão do texto */
-}
+    padding-bottom: 50px;
+    color: white;
+     
 
+}
 /* Cabeçalho */
 header {
     background-color: #000000;
@@ -20,8 +21,8 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 2.5rem; /* Título maior e mais destacado */
-    font-weight: 600; /* Peso intermediário */
+    font-size: 2.5rem; 
+    font-weight: 600; 
 }
 
 header p {
@@ -33,8 +34,7 @@ header p {
 header nav ul {
     list-style-type: none;
     padding: 0;
-    margin-top: 10px; /* Adicionando espaço entre o título e o menu */
-}
+    margin-top: 10px;}
 
 header nav ul li {
     display: inline-block;
@@ -42,14 +42,14 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: white; /* Cor do texto dos links */
+    color: white;
     text-decoration: none;
-    font-weight: 500; /* Peso intermediário para os links */
+    font-size: 1.2rem; 
+    font-weight: 500; 
+    transition: color 0.3s ease;
 }
 
-header nav ul li a:hover {
-    color: #483D8B; /* Cor de destaque no hover */
-}
+
 
 /* Seções */
 section {
@@ -60,17 +60,25 @@ section {
 .container {
     width: 80%;
     margin: 0 auto;
+    animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both;
+    
 }
+
 
 /* Sobre mim - Foto de perfil */
 #foto {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    object-fit: cover; /* A imagem se ajusta dentro do círculo */
+    object-fit: cover; 
     margin-bottom: 20px;
-    border: 3px solid #483D8B; /* Borda com cor de destaque */
+    border: 3px solid #483D8B;
+    -webkit-animation: scale-in-tl 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-tl 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    
+    
 }
+
 
 /* Links sociais */
 #social-links a {
@@ -81,7 +89,7 @@ section {
 }
 
 #social-links a:hover {
-    color: #483D8B; /* Cor de destaque no hover */
+    color: #483D8B; 
 }
 
 /* Habilidades - Estilo de lista */
@@ -95,6 +103,19 @@ section {
 #experiencias li {
     font-size: 1.2rem;
     margin-bottom: 10px;
+    list-style: none;
+}
+
+#ferramentas li{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+#linguagem-programacao li{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    list-style: none;
 }
 
 /* Footer */
@@ -102,20 +123,22 @@ footer {
     background-color: #483D8B;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
     position: relative;
     bottom: 0;
     width: 100%;
-    font-size: 14px;
 }
 
 /* Responsividade - Mobile First */
 @media (max-width: 768px) {
+    
+    
+    
     header nav ul {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0; /* Remove o padding do menu para um layout mais compacto */
+        padding: 0; 
     }
 
     header nav ul li {
@@ -123,7 +146,7 @@ footer {
     }
 
     .container {
-        width: 90%; /* Aumenta a largura da seção em telas pequenas */
+        width: 90%; 
     }
 
     #foto {
@@ -141,3 +164,9 @@ footer {
         padding: 20px 0;
     }
 }
+
+
+
+
+ @keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
+ @-webkit-keyframes scale-in-tl{0%{-webkit-transform:scale(0);transform:scale(0);-webkit-transform-origin:0 0;transform-origin:0 0;opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:0 0;transform-origin:0 0;opacity:1}}@keyframes scale-in-tl{0%{-webkit-transform:scale(0);transform:scale(0);-webkit-transform-origin:0 0;transform-origin:0 0;opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:0 0;transform-origin:0 0;opacity:1}}
